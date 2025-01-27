@@ -1,0 +1,481 @@
+/* Main Area Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: -webkit-fill-available; /* Ensures the html element covers the available height */
+}
+
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: black;
+  color: white;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(52, 15, 218, 0.67),
+      rgba(0, 60, 120, 0.778)
+    ),
+    url("/images/light-background.jpg") no-repeat center/cover;
+}
+
+/* Index Page */
+/* Container */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-lg {
+  max-width: 1400px;
+}
+
+.container-sm {
+  max-width: 900px;
+}
+
+.container-tiny {
+  max-width: 500px;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.main-menu {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+
+.header a {
+  font-size: 20px;
+}
+.header a:hover {
+  color: purple;
+}
+
+.current {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .header .header-flex {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+  }
+  .header-left a {
+    font-size: 20px;
+  }
+  .header a {
+    font-size: 15px;
+  }
+
+  .hero .intro-container {
+    margin: 10px auto;
+    padding: 20px 20px;
+  }
+
+  .hero .intro-container h1 {
+    font-size: 45px;
+  }
+
+  .hero .intro-container p {
+    font-size: 20px;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adjust padding as needed */
+    margin: 0 auto; /* Center the footer */
+  }
+
+  .container .footer-flex .contact ul {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .contact ul {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .contact li {
+    display: flex;
+    align-items: center; /* Align the icon and text vertically */
+    text-align: center; /* Center-align the text */
+    gap: 10px; /* Add space between the icon and text */
+    font-size: 18px; /* Adjust text size for better readability */
+    width: 100%; /* Ensure it spans the full width */
+    justify-content: center; /* Center items horizontally */
+  }
+}
+
+/* Intro Container */
+
+.intro-container {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  max-width: 800px;
+  margin: 60px auto;
+  margin-bottom: 20px;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.intro-container h1 {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.intro-container p {
+  font-size: 25px;
+}
+.headshot {
+  height: 300px;
+  border-radius: 50%;
+}
+
+/* Footer */
+
+.footer-flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+  padding: 20px;
+}
+
+.contact ul {
+  display: flex;
+  gap: 30px; /* Adds spacing between list items */
+  list-style: none; /* Removes bullet points */
+  margin: 10px;
+  padding: 10px;
+}
+
+.contact li {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  gap: 10px; /* Space between icon and text */
+}
+
+.footer a {
+  font-size: 20px;
+}
+.footer a:hover {
+  color: purple;
+}
+
+.btn,
+.btn-main {
+  text-align: center;
+}
+
+.about-me {
+  text-align: center;
+  margin: 50px;
+}
+.download-cv {
+  text-align: center;
+  margin: 10px;
+}
+/* Contact Page Styles */
+.main-content {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 150px auto;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+  padding: 0 40px;
+}
+
+.main-content form {
+  flex: 1;
+}
+
+.main-content .text-container {
+  flex: 1;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: 0;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+.btn {
+  display: block;
+  padding: 15px 20px;
+  border-radius: 20px;
+  width: 100%;
+  border: 0;
+  background-color: rgb(183, 111, 184);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.btn:hover {
+  background: rgba(183, 111, 184, 0.4);
+}
+
+/* FORM Highlight valid/invalid fields */
+.has-error input,
+.has-error textarea {
+  border: 1px solid red;
+}
+
+.has-success input,
+.has-success textarea {
+  border: 1px solid green;
+}
+
+/* Style error messages */
+.form-group .pristine-error {
+  color: red;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+/* Text Container */
+.text-container h1 {
+  font-size: 50px;
+  margin: 50px 0 20px;
+  line-height: 1.2;
+}
+
+.text-container {
+  font-size: 18px;
+}
+
+/* Styles for about me Page */
+.aspects {
+  padding: 20px 50px;
+}
+
+.service-item h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.headshot-am {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 1366px;
+  width: 100%;
+  aspect-ratio: 1366 / 570;
+  overflow: hidden; /* Prevent overflow */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+  width: 100%; /* Make video fill the container */
+  height: 100%; /* Ensure it respects the aspect ratio */
+  object-fit: cover; /* Ensures the video fits neatly */
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.photo-flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+/* Porfolio Styles */
+.skills-section {
+  margin-top: 10px;
+}
+
+.skills-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: disc;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 300px;
+}
+
+.skills-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.portfolio {
+  margin: 60px auto;
+  text-align: center;
+  max-width: 900px; /* Restrict the overall width for readability */
+}
+
+/* Styling for Each Portfolio Item */
+.portfolio-item {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%; /* Responsive image */
+  max-width: 600px; /* Constrain width */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.portfolio-item p {
+  text-align: justify;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 18px; /* Text size in px */
+  color: #fff;
+  max-width: 700px; /* Restrict paragraph width */
+}
+
+/* Styling for Photos Section */
+.photo-flex {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.photo-item img {
+  width: 100%; /* Responsive image scaling */
+  max-width: 300px; /* Adjust size of photos */
+  border-radius: 8px; /* Adds rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.portfolio,
+.intro h3 {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.link-github,
+h2 {
+  text-align: center;
+}
+
+/* Media Queries for Contact Page */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column-reverse;
+    justify-content: start;
+    margin: auto;
+  }
+
+  .main-content form,
+  .main-content .text-container {
+    width: 100%;
+  }
+
+  .main-content h1 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .main-content p {
+    font-size: 16px;
+  }
+  .photo-flex {
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Adjust gap for better spacing */
+    align-items: center; /* Center images */
+  }
+
+  .photo-item img {
+    max-width: 100%; /* Make images stack neatly */
+  }
+}
