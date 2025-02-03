@@ -17,7 +17,7 @@
             <div class="container header-flex">
                 <nav>
                     <ul class="main-menu">
-                        <li><a class="current" href="index.html">Home</a></li>
+                        <li><a class="current" href="/">Home</a></li>
                         <li><a href="/pages/aboutMe.html">About Me</a></li>
                         <li><a href="/pages/porfolio.html">Portfolio</a></li>
                     </ul>
@@ -26,13 +26,22 @@
         </header>
 
         <section class="hero">
+            
             <div class="container container-tiny intro-container">
                 <h1>
                     Hey, my name is <strong>Viv Madigan</strong>
                 </h1>
-                <img class="headshot" src="public/images/Viv_Headshot.jpg" alt="Viv Madigan Headshot">
-                <p>I'm currently studying .NET development at Nackademin in Stockholm, a course which encompasses both backend and frontend development, as well as modern workflows. My program runs until June 2026, and I'm currently looking for a LIA placement from November 2025 to May 2026. If you think I could be a great fit for your business, please feel free to reach out and send me a message!</p>
+                <a href="/images/Viv_Headshot.jpg" data-lightbox="gallery" data-title="Viv Madigan">
+                    <img class="headshot" src="/images/Viv_Headshot.jpg" alt="Viv Madigan Headshot">
+                </a>
+                <p>
+                    I'm currently studying .NET development at Nackademin in Stockholm, a course which encompasses both backend 
+                    and frontend development, as well as modern workflows. My program runs until June 2026, and I'm currently 
+                    looking for a LIA placement from November 2025 to May 2026. If you think I could be a great fit for your 
+                    business, please feel free to reach out and send me a message!
+                </p>
             </div>
+            
 
         </section>
         <section class="about-me">
@@ -46,7 +55,7 @@
 
             <div class="container container-tiny">
                 <h2>Want to just download my CV?</h2>
-                <a href="public/documents/Vivyan_Madigan_CV_2024_25.pdf" download class="btn btn-main">Download Vivs CV</a>
+                <a href="/documents/Viv_Madigan_CV_2025JAN.pdf" download class="btn btn-main">Download Vivs CV</a>
             </div>
         </section>
 
@@ -63,5 +72,8 @@
             </div>
         </footer>
     </div> 
+    <script type="module" src="/src/script.js"></script>
+
+
 </body>
 </html>

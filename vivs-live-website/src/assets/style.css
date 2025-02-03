@@ -337,19 +337,29 @@ ul {
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-  max-width: 1366px;
+  max-width: 1360px;
   width: 100%;
-  aspect-ratio: 1366 / 570;
   overflow: hidden; /* Prevent overflow */
   border: 2px solid #ccc;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.video-container video {
-  width: 100%; /* Make video fill the container */
-  height: 100%; /* Ensure it respects the aspect ratio */
-  object-fit: cover; /* Ensures the video fits neatly */
+/* Remove `aspect-ratio` from .video-container */
+
+.video-container div {
+  position: relative;
+  width: 100%;
+  padding-top: 41.67%; /* This maintains the correct aspect ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px; /* Optional: Rounds the corners */
 }
 
 .photo-item img {
@@ -444,6 +454,7 @@ ul {
 
 .link-github,
 h2 {
+  font-size: 25px;
   text-align: center;
 }
 
