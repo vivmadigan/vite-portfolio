@@ -1,5 +1,15 @@
 import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
 export default defineConfig({
-  base: '/vite-portfolio/', // Change this to match your GitHub repo name
+  base: '/vite-portfolio/', // Must match GitHub repo name
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        about: resolve(__dirname, 'src/pages/aboutMe.html'),
+        portfolio: resolve(__dirname, 'src/pages/porfolio.html'),
+      },
+    },
+  },
 });
