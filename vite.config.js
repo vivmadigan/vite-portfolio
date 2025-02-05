@@ -1,18 +1,18 @@
-// import { defineConfig } from 'vite';
-// import { resolve } from 'path';
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
-// export default defineConfig({
-//   base: '/vite-portfolio/', // Must match GitHub repo name
-//   build: {
-//     rollupOptions: {
-//       input: {
-//         main: resolve(__dirname, 'index.html'),
-//         about: resolve(__dirname, 'src/pages/aboutMe.html'),
-//         portfolio: resolve(__dirname, 'src/pages/porfolio.html'),
-//       },
-//     },
-//   },
-// });
+export default defineConfig({
+  base: '/vite-portfolio/', // Must match GitHub repo name
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        about: resolve(__dirname, 'src/pages/aboutMe.html'),
+        portfolio: resolve(__dirname, 'src/pages/porfolio.html'),
+      },
+    },
+  },
+});
 // import { defineConfig } from 'vite';
 // import { resolve } from 'path';
 
@@ -28,9 +28,9 @@
 //     },
 //   },
 // });
-import { defineConfig } from 'vite';
+// import { defineConfig } from 'vite';
 
-export default defineConfig({
-  base: '/vite-portfolio/', // Ensures correct paths for GitHub Pages
-});
+// export default defineConfig({
+//   base: '/vite-portfolio/', // Ensures correct paths for GitHub Pages
+// });
 
